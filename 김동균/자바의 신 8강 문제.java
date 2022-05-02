@@ -1,5 +1,5 @@
 // Student Class
-public class Student {
+class Student {
     private String name;
     private String address;
     private String phone;
@@ -28,10 +28,10 @@ public class Student {
 }
 
 // ManageStudent Class
-public class ManageStudent {
+class ManageStudent {
     public static void main(String[] args) {
         ManageStudent manageStudent = new ManageStudent();
-        Student[] students = null;
+        Student[] students;
 
         students = manageStudent.addStudent();
         manageStudent.printStudents(students);
