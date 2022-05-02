@@ -1,4 +1,4 @@
-package 답이없다잉.Chapter08;
+package Chapter08;
 
 public class MemberDTO {
     public String name;
