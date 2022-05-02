@@ -26,4 +26,20 @@ public class ReferenceReturn {
 //        return returnInt;
 //        returnInt++;
 //    }
+
+    public int ifConditionIntReturn() {
+        int returnInt = 0;
+        if (returnInt == 0) {
+            return ++returnInt;
+        } else {
+            return --returnInt;
+        }
+    }
+    public int ifConditionNoElseIntReturn() {
+        int returnInt = 0;
+        if (returnInt == 0) {
+            return ++returnInt;
+        }
+        return --returnInt;
+    }
 }
