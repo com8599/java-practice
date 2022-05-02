@@ -1,4 +1,3 @@
-// Student Class
 class Student {
     private String name;
     private String address;
@@ -27,7 +26,6 @@ class Student {
     }
 }
 
-// ManageStudent Class
 class ManageStudent {
     public static void main(String[] args) {
         ManageStudent manageStudent = new ManageStudent();
