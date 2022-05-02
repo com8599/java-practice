@@ -19,4 +19,11 @@ public class ReferenceReturn {
     private String StringReturn() {
         return "Return value";
     }
+
+    // java: unreachable statement
+//    private int calculateAfterIntReturn() {
+//        int returnInt = 0;
+//        return returnInt;
+//        returnInt++;
+//    }
 }
