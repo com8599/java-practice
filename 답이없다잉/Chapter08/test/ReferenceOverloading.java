@@ -1,4 +1,4 @@
-package Chapter08;
+package Chapter08.test;
 
 public class ReferenceOverloading {
     public static void main(String[] args) {

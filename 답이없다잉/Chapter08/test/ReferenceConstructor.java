@@ -1,4 +1,4 @@
-package Chapter08;
+package Chapter08.test;
 
 public class ReferenceConstructor {
     public static void main(String[] args) {
