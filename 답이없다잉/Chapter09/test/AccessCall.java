@@ -6,6 +6,6 @@ public class AccessCall {
         accessModifier.publicMethod();
         accessModifier.protectedMethod();
         accessModifier.packagePrivateMethod();
-        accessModifier.privateMethod();
+        // accessModifier.privateMethod();
     }
 }
