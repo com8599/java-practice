@@ -106,7 +106,7 @@
    ```java
    printStudents(student);
    ```
-   ![12.png](./practice/12.png)
+   ![12.png](12.png)
 13. ManageStudent 클래스를 컴파일한 후 실행해보자. 결과는 다음과 같이 출력되어야 한다.
    ```text
    Lim null null null
@@ -115,4 +115,4 @@
    ```
    결과
 
-   ![12.png](./practice/12.png)
+   ![12.png](12.png)
