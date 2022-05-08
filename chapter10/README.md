@@ -46,3 +46,55 @@
 - 접근 권한은 부모 클래스의 메서드보다 넓은 범위로만 지정할 수 있습니다.
   - public -> private (X)
   - private -> public (O)
+
+
+## 참조 자료형의 형 변환
+- 참조 자료형도 형 변환이 가능합니다.
+- 자식 타입의 객체를 부모 타입으로 형 변환하는 것은 자동으로 됩니다.
+- 부모 타입의 객체를 자식 타입으로 형 변환할 때에는 반드시 명시적으로 타입을 지정해주어야 합니다.
+- instanceof 예약어를 사용하여 객체의 타입을 확인할 수 있습니다.
+- instanceof 예약어로 타입 확인을 해야할 때에는 부모 타입도 true라는 결과를 제공합니다.
+- instanceof 예약어를 사용하여 타입을 점검할 때에는 가장 하위에 있는 자식 타입부터 확인을 해야 제대로 타입 점검이 가능합니다.
+
+```
+public class Example {
+    public static void main(String[] args) {
+        Example example = new Example();
+        example.objects();
+    }
+
+    public void objects() {
+        Parent[] parents = new Parent[3];
+        parents[0] = new Child();
+        parents[1] = new Parent();
+        parents[2] = new Child();
+        objectTypeCheck(parents);
+    }
+
+    public void objectTypeCheck(Parent... parents) {
+        for (Parent item : parents) {
+            if (item instanceof Child) {
+                item.info();
+            } else if (item instanceof Parent) {
+                item.info();
+            }
+        }
+    }
+
+    class Parent {
+
+        public void info() {
+            System.out.println("info() By Parent Class");
+        }
+    }
+
+    class Child extends Parent{
+
+        @Override
+        public void info() {
+            System.out.println("info() By Child Class");
+        }
+    }
+}
+```
+
