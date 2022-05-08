@@ -3,14 +3,26 @@ package 이민준.Chapter10;
 public class InheritanceCasting {
 	public static void main(String[] args) {
 		InheritanceCasting inheritanceCasting = new InheritanceCasting();
-		inheritanceCasting.objectCast();
+		inheritanceCasting.objectCastArray();
 	}
 
-	private void objectCast() {
-		Parent parent = new Parent();
-		Child child = new Child();
+	public void objectCastArray() {
+		Parent[] parentArrays = new Parent[3];
+		parentArrays[0] = new Child();
+		parentArrays[1] = new Parent();
+		parentArrays[2] = new Child();
 
-		Parent parent2 = child;
+		for (Parent parent : parentArrays) {
+			if (parent instanceof Child) {
+				parent.printName();
+			} else {
+				parent.printName();
+			}
+		}
+	}
+	private void objectCast() {
+		Child child = new Child();
+		Parent parent = child;
 		Child child2 = (Child) parent;
 	}
 }
