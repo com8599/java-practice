@@ -1,4 +1,4 @@
-package 이민준.Chapter08.practice;
+package 이민준.Chapter12;
 
 import java.util.Objects;
 
@@ -32,6 +32,7 @@ public class Student {
 			", email='" + email + '\'' +
 			'}';
 	}
+
 	@Override
 	public boolean equals(Object o) {
 		if (this == o)
